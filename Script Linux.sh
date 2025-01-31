@@ -80,126 +80,146 @@ done
 echo "Instalando o Minecraft Bedrock Launcher"
 flatpak install flathub io.mrarm.mcpelauncher
 
+#!/bin/bash
+
+# Primeiro Menu
 MENU="
 1 - Instalar o LazyVim
 2 - Passar pro Proximo item
 "
 
-echo "$MENU"
-
 LAZY="Instalando o LazyVim"
 PROXIMO="Indo para o proximo"
 
-read -p "Escolha uma opção: " OPCAO
+while true; do
+  echo "$MENU"
 
-case "$OPCAO" in
-	1)
-		echo "$LAZY"
-		git clone https://github.com/LazyVim/starter ~/.config/nvim
-		rm -rf ~/.config/nvim/.git
-		nvim
-	;;
+  read -p "Escolha uma opção: " OPCAO
 
-	2)
-		echo "$PROXIMO"
-	;;
+  case "$OPCAO" in
+    1)
+      echo "$LAZY"
+      git clone https://github.com/LazyVim/starter ~/.config/nvim
+      rm -rf ~/.config/nvim/.git
+      nvim
+      break
+      ;;
+    2)
+      echo "$PROXIMO"
+      break
+      ;;
+    *)
+      echo "Opção $OPCAO não é válida"
+      ;;
+  esac
+done
 
-	*)
-		echo "Opção $OPCAO não é valida"
-		;;
-esac
-
+# Segundo Menu
 MENU="
 1 - Steam Flatpak
 2 - Steam Debian
 3 - Steam Arch Linux
 "
 
-echo "$MENU"
-
 FLATPAK="Instalando a Steam em Flatpak"
 DEBIAN="Instalando a Steam para Debian e Derivados"
 PACMAN="Instalando a Steam para Arch Linux"
 
-read -p "Escolha uma opção: " OPCAO
+while true; do
+  echo "$MENU"
 
-case "$OPCAO" in
-	1)
-		echo "$FLATPAK"
-		flatpak install flathub com.valvesoftware.Steam
-	;;
+  read -p "Escolha uma opção: " OPCAO
 
-	2)
-		echo "$DEBIAN"
-		sudo apt install steam
-	;;
+  case "$OPCAO" in
+    1)
+      echo "$FLATPAK"
+      flatpak install flathub com.valvesoftware.Steam
+      break
+      ;;
+    2)
+      echo "$DEBIAN"
+      sudo apt install steam
+      break
+      ;;
+    3)
+      echo "$PACMAN"
+      sudo pacman -S steam
+      break
+      ;;
+    *)
+      echo "Opção $OPCAO não é válida"
+      ;;
+  esac
+done
 
-	3)
-		echo "$PACMAN"
-		sudo pacman -S steam
-		;;
-
-	*)
-		echo "Opção $OPCAO não é valida"
-		;;
-esac
-
+# Instalações obrigatórias (não alteradas)
 echo "Instalando o VLC"
 flatpak install flathub org.videolan.VLC
 
 echo "Instalando o Sober (Roblox no Linux)"
 flatpak install --user https://sober.vinegarhq.org/sober.flatpakref
 
+# Terceiro Menu
 MENU="
 1 - ZSH Debian
 2 - ZSH Arch
 "
 
-echo "$MENU"
-
 ZSHDEBIAN="Instalando o ZSH para Debian"
 ZSHARCH="Instalando o ZSH para Arch Linux"
 
-read -p "Escolha uma opção: " OPCAO
+while true; do
+  echo "$MENU"
 
-case "$OPCAO" in
-	1)
-		echo "$ZSHDEBIAN"
-		sudo apt install zsh
-		;;
-	2)
-		echo "ZSHARCH"
-		sudo pacman -S zsh
-		;;
-	*)
-		echo "Opção $OPCAO não é valida"
-		;;
-esac
+  read -p "Escolha uma opção: " OPCAO
 
+  case "$OPCAO" in
+    1)
+      echo "$ZSHDEBIAN"
+      sudo apt install zsh
+      break
+      ;;
+    2)
+      echo "$ZSHARCH"
+      sudo pacman -S zsh
+      break
+      ;;
+    *)
+      echo "Opção $OPCAO não é válida"
+      ;;
+  esac
+done
+
+# Instalação obrigatória (não alterada)
 echo "Instalando o Oh My ZSH"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
+# Quarto Menu
 MENU="
 1 - Sim
 2 - Não
 "
 
-echo "$MENU"
-
 SIM="Instalando o Ferdium"
 NAO="Não instalando o Ferdium"
 
-read -p "Instalar o Ferdium? " OPCAO
+while true; do
+  echo "$MENU"
 
-case "$OPCAO" in
-	1)
-		echo "$SIM"
-		flatpak install flathub org.ferdium.Ferdium
-		;;
-	2)
-		echo "$NAO"
-		;;
-	*)
-		echo "Opção $OPCAO não é valida
-		;;
-esac
+  read -p "Instalar o Ferdium? " OPCAO
+
+  case "$OPCAO" in
+    1)
+      echo "$SIM"
+      flatpak install flathub org.ferdium.Ferdium
+      break
+      ;;
+    2)
+      echo "$NAO"
+      break
+      ;;
+    *)
+      echo "Opção $OPCAO não é válida"
+      ;;
+  esac
+done
