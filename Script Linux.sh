@@ -14,32 +14,68 @@ flatpak install flathub org.mozilla.Thunderbird
 flatpak install flathub io.itch.itch
 
 MENU="
+1 - Sim
+2 - Não
+"
+
+while true; do
+  echo "$MENU"
+
+  SIM="Instalando o Revolt"
+  NAO="Passando para o próximo item"
+
+  read -p "Escolha uma opção: " OPCAO
+
+  case "$OPCAO" in
+    1)
+      echo "$SIM"
+      flatpak install flathub chat.revolt.RevoltDesktop
+      break
+      ;;
+
+    2)
+      echo "$NAO"
+      break
+      ;;
+
+    *)
+      echo "Opção $OPCAO não é válida"
+      ;;
+  esac
+done
+
+MENU="
 1 - NeoVim Debian
 2 - NeoVim Pacman
 "
 
-echo "$MENU"
-
 DEBIAN="Instalando o Neovim para derivados Debian"
 PACMAN="Instalando o Neovim para derivados Arch Linux"
 
-read -p "Escolha uma opção: " OPCAO
+while true; do
+  echo "$MENU"
 
-case "$OPCAO" in
-	1)
-		echo "$DEBIAN"
-		sudo apt install neovim
-	;;
+  read -p "Escolha uma opção: " OPCAO
 
-	2)
-		echo "$PACMAN"
-		sudo pacman -S neovim
-	;;
+  case "$OPCAO" in
+    1)
+      echo "$DEBIAN"
+      sudo apt install neovim
+      break
+      ;;
 
-	*)
-		echo "Opção $OPCAO não é valida"
-		;;
-esac
+    2)
+      echo "$PACMAN"
+      sudo pacman -S neovim
+      break
+      ;;
+
+    *)
+      echo "Opção $OPCAO não é válida"
+      ;;
+  esac
+done
+
 
 echo "Instalando o Minecraft Bedrock Launcher"
 flatpak install flathub io.mrarm.mcpelauncher
