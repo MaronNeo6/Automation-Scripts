@@ -80,9 +80,6 @@ done
 echo "Instalando o Minecraft Bedrock Launcher"
 flatpak install flathub io.mrarm.mcpelauncher
 
-#!/bin/bash
-
-# Primeiro Menu
 MENU="
 1 - Instalar o LazyVim
 2 - Passar pro Proximo item
@@ -114,7 +111,6 @@ while true; do
   esac
 done
 
-# Segundo Menu
 MENU="
 1 - Steam Flatpak
 2 - Steam Debian
@@ -152,14 +148,12 @@ while true; do
   esac
 done
 
-# Instalações obrigatórias (não alteradas)
 echo "Instalando o VLC"
 flatpak install flathub org.videolan.VLC
 
 echo "Instalando o Sober (Roblox no Linux)"
 flatpak install --user https://sober.vinegarhq.org/sober.flatpakref
 
-# Terceiro Menu
 MENU="
 1 - ZSH Debian
 2 - ZSH Arch
@@ -190,11 +184,9 @@ while true; do
   esac
 done
 
-# Instalação obrigatória (não alterada)
 echo "Instalando o Oh My ZSH"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-# Quarto Menu
 MENU="
 1 - Sim
 2 - Não
