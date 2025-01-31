@@ -4,6 +4,7 @@ Title Teste
 echo Eu cuspo fatos, aceita
 pause
 
+:1
 cls
 echo Escolha um aplicativo para instalar:
 echo 1. Firefox
@@ -56,8 +57,10 @@ if "%choice%"=="1" (
 ) else (
   echo Escolha um numero valido!
   pause
+  goto 1
 )
 
+:2
 cls
 echo Deseja instalar o Thunderbird
 echo 1. Sim
@@ -81,8 +84,10 @@ if "%choice%"=="1" (
 ) else (
     echo Escolha um numero valido!
     pause
+    goto 2
 )
 
+:3
 cls
 echo Deseja instalar o Bitwarden?
 echo 1. Sim
@@ -106,8 +111,10 @@ if "%choice%"=="1" (
 ) else (
     echo Escolha um numero valido!
     pause
+    goto 3
 )
 
+:4
 cls
 echo Deseja instalar o QbitTorrent?
 echo 1. Sim
@@ -130,7 +137,10 @@ if "%choice%"=="1" (
 ) else (
     echo Escolha um numero valido!
     pause
+    goto 4
 )
+
+:5
 cls
 echo Escolha um aplicativo para instalar:
 echo 1. Discord
@@ -165,8 +175,10 @@ if "%choice%"=="1" (
 ) else (
     echo Escolha inválida. Por favor, digite um número válido.
     pause
+    goto 5
 )
 
+:6
 cls
 echo Deseja instalar a Steam?
 echo 1. Sim
@@ -189,8 +201,10 @@ if "%choice%"=="1"  (
 ) else (
     echo Escolha inválida. Por favor, digite um numero válido.
     pause
+    goto 6
 )
 
+:7
 cls 
 echo Escolha um Launcher de Minecraft pra Instalar:
 echo 1. Prism Launcher
@@ -226,8 +240,10 @@ if "%choice%"=="1" (
 ) else (
     echo Escolha inválida. Por favor, digite um numero válido.
     pause
+    goto 7
 )    
 
+:8
 cls
 echo Escolha um editor de codigo para instalar
 echo 1. Neo Vim
@@ -252,12 +268,20 @@ if "%choice"=="1" (
     echo Instalando o Visual Studio Code
     winget install Microsoft.VisualStudioCode
     echo a Instalação do Visual Studio Code concluida com sucesso
-
+) else if "%choice%"=="4" (
+    echo Ignorando
+    pause
+) else if "%choice%"=="5" (
+    echo Fechando o Script
+    pause
+    exit
+) else (
+    echo Escolha inválida, Por favor, digite um numero válido
+    goto 8
 )
 
+cls
 echo O Script acabou preesione qualquer tecla para fechar
 pause
-
-start "" "https://www.youtube.com/watch?v=yR3otY7IHMI"
 
 exit
