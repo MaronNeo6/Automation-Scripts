@@ -243,32 +243,32 @@ if "%choice%"=="2" (
 :9
 cls
 echo Escolha um editor de codigo para instalar
-echo 2. Neo Vim
-echo 3. Vscodium
-echo 4. Visual Studio Code
-echo 5. Ignorar
-echo 6. Sair
+echo 1. Neo Vim
+echo 2. Vscodium
+echo 3. Visual Studio Code
+echo 4. Ignorar
+echo 5. Sair
 
 set /p choice="Digite um numero da sua escolha: "
 
-if "%choice"=="2" (
+if "%choice"=="1" (
     echo Instalando o NeoVim
     winget install Neovim.Neovim
     echo Instalação do NeoVim concluida com sucesso
     pause
-) else if "%choice%"=="3" (
+) else if "%choice%"=="2" (
     echo Instalando o Vscodium
     winget install VSCodium.VSCodium
     echo Instalação do Vscodium concluida com sucesso
     pause
-) else if "%choice%"=="4" (
+) else if "%choice%"=="3" (
     echo Instalando o Visual Studio Code
     winget install Microsoft.VisualStudioCode
     echo a Instalação do Visual Studio Code concluida com sucesso
-) else if "%choice%"=="5" (
+) else if "%choice%"=="4" (
     echo Ignorando
     pause
-) else if "%choice%"=="6" (
+) else if "%choice%"=="5" (
     echo Fechando o Script
     pause
     exit
