@@ -1,4 +1,5 @@
 #!/bin/bash
+echo teste
 
 echo "Este Script demanda que o Flatpak esteja instalado para a maioria das coias"
 echo "Caso este não seja o caso o Script não ira funcionar!"
