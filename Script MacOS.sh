@@ -93,6 +93,71 @@ while true do
         3)
             echo "Fechando o Script..."
             break
+            exit
+            ;;
+        *)
+            echo "Opção inválida, tente novamente"
+            ;;
+    esac
+done
+
+mostrar_menu() {
+    echo "Escolha uma opção"
+    echo "1. Instalar o VLC"
+    echo "2. Pular"
+    echo "3. Sair"
+}
+
+while true do
+    mostrar_menu
+    read -p "Digite sua escolha: " escolha
+
+    case $escolha in
+        1)
+            echo "Instalando o VLC"
+            brew install --cask vlc
+            break
+            ;;
+        2)
+            echo "Pulando a etapa"
+            break
+            ;;
+        3)
+            echo "Fechando o Script..."
+            break
+            exit
+            ;;
+        *)
+            echo "Opção inválida, tente novamente"
+            ;;
+    esac
+done
+
+mostrar_menu() {
+    echo "Escolha uma opção"
+    echo "1. Instalar o Ferdim"
+    echo "2. Pular"
+    echo "3. Sair"
+}
+
+while true do
+    mostrar_menu
+    read -p "Digit sua escolha: " escolha
+
+    case $escolha in
+        1)
+            echo "Instalando o Ferdim"
+            brew install --cask ferdium
+            break
+            ;;
+        2)
+            echo "Pulando a etapa"
+            break
+            ;;
+        3)
+            echo "Fechando o Script..."
+            break
+            exit
             ;;
         *)
             echo "Opção inválida, tente novamente"
