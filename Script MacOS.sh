@@ -142,7 +142,7 @@ mostrar_menu() {
 
 while true do
     mostrar_menu
-    read -p "Digit sua escolha: " escolha
+    read -p "Digite sua escolha: " escolha
 
     case $escolha in
         1)
@@ -161,6 +161,38 @@ while true do
             ;;
         *)
             echo "Opção inválida, tente novamente"
+            ;;
+    esac
+done
+
+mostrar_menu() {
+    echo "Escolha uma opção"
+    echo "1. Instalar o Prism Launcher"
+    echo "2. Pular"
+    echo "3. Sair"
+}
+
+while true do
+    mostrar_menu
+    read -p "Digite sua escolha: " escolha
+
+    case $escolha in
+        1)
+            echo "Instalando o Prism Launcher"
+            brew install --cask prismlauncher
+            break
+            ;;
+        2)
+            echo "Pulando a etapa"
+            break
+            ;;
+        3)
+            echo "Fechando o Script"
+            break
+            exit
+            ;;
+        *)
+            echo "Opção inválida, tente novamnte"
             ;;
     esac
 done
