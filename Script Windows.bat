@@ -60,21 +60,21 @@ if "%choice%"=="2" (
 :3
 cls
 echo Deseja instalar o Thunderbird
-echo 2. Sim
-echo 3. Nao
-echo 4. Sair
+echo 1. Sim
+echo 2. Nao
+echo 3. Sair
 
 set /p choice="Digite o numero de sua escolha: "
 
-if "%choice%"=="2" (
+if "%choice%"=="1" (
     echo Instalando o Thunderbird...
     winget install Mozilla.Thunderbird
     echo Instalação do Thunderbird foi concluida com sucesso.
     pause
-) else if "%choice%"=="3" (
+) else if "%choice%"=="2" (
     echo Ignorando
     pause
-) else if "%choice%"=="4" (
+) else if "%choice%"=="3" (
     echo Fechando o Script...
     pause
     exit
