@@ -24,3 +24,14 @@ Apos isso utilide o commando chmod para dar as permissões e excute o script no 
 chmod +x "Script Linux.sh"
 ./"Script Linux.sh"
 ```
+
+### MacOS
+Para o Script do MacOS, você deve ter o **Brew** instalado para que ele funcione
+
+Instale ele [aqui](https://brew.sh/)
+
+Apos instalar o utilize o comando chmod semelhante a versão Linux do Script
+
+```
+chmod +x "Script MacOS"
+./"Script MacOS.sh"
