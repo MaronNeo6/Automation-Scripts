@@ -22,4 +22,5 @@ Apos isso utilide o commando chmod para dar as permissões e excute o script no 
 
 ```
 chmod +x "Script Linux.sh"
+./"Script Linux.sh"
 ```
