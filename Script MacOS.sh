@@ -196,3 +196,35 @@ while true do
             ;;
     esac
 done
+
+mostrar_menu() {
+    echo "Escolha uma opção"
+    echo "1. Instalar o qBittorrent"
+    echo "2. Pular"
+    echo "3. Fechar"
+}
+
+while true do
+    mostrar_menu
+    read -p "Digite sua escolha: " escolha
+
+    case $escolha in
+        1)
+            echo "Instalando o qBittorrent"
+            brew install --cask qbittorrent
+            break
+            ;;
+        2)
+            echo "Pulando a etapa"
+            break
+            ;;
+        3)
+            echo "Fechando o Script..."
+            break
+            exit
+            ;;
+        *)
+            echo "Opção inválida, tente novamente"
+            ;;
+    esac
+done
