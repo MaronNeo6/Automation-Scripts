@@ -93,15 +93,15 @@ echo 3. Sair
 
 set /p choice="Digite um numero da sua escolha: "
 
-if "%choice%"=="2" (
+if "%choice%"=="1" (
     echo Instalando o Bitwarden...
     winget install Bitwarden.Bitwarden
     echo Instalação do Bitwarden foi concluida com sucesso.
     pause
-) else if "%choice%"=="3" (
+) else if "%choice%"=="2" (
     echo Ignorando
     pause
-) else if "%choice%"=="4" (
+) else if "%choice%"=="3" (
     echo Fechando o Script...
     pause
     exit
@@ -114,20 +114,20 @@ if "%choice%"=="2" (
 :5
 cls
 echo Deseja instalar o QbitTorrent?
-echo 2. Sim
-echo 3. Nao
-echo 4. Sair
+echo 1. Sim
+echo 2. Nao
+echo 3. Sair
 
 set /p choice="Digite um numero da sua escolha: "
 
-if "%choice%"=="2" (
+if "%choice%"=="1" (
     echo Instalando o QbitTorrent
     winget install qBittorrent.qBittorrent
     echo Instalação do QbitTorrent foi concluida com sucesso.
-) else if "%choice%"=="3" (
+) else if "%choice%"=="2" (
     echo Ignorando
     pause
-) else if "%choice%"=="4" (
+) else if "%choice%"=="3" (
     echo Fechando o Script...
     pause
     exit
@@ -140,32 +140,32 @@ if "%choice%"=="2" (
 :6
 cls
 echo Escolha um aplicativo para instalar:
-echo 2. Discord
-echo 3. Discord Canary
-echo 4. Discord PTB
-echo 5. Ignorar
-echo 6. Fechar
+echo 1. Discord
+echo 2. Discord Canary
+echo 3. Discord PTB
+echo 4. Ignorar
+echo 5. Fechar
 
 set /p choice="Digite o número da sua escolha: "
 
-if "%choice%"=="2" (
+if "%choice%"=="1" (
     echo Instalando o Discord...
     winget install Discord.Discord
     echo Instalação do Discord foi concluida com sucesso.
     pause
-) else if "%choice%"=="3" (
+) else if "%choice%"=="2" (
     echo Instalando o Discord PTB...
     winget install Discord.Discord.PTB
     echo Instalação do Discord PTB foi concluida com sucesso.
     pause
-) else if "%choice%"=="4" (
+) else if "%choice%"=="3" (
     echo Instalando o Discord Canary...
     winget install Discord.Discord.Canary
     echo Instalação do Discord Canary foi concluida com sucesso
-) else if "%choice%"=="5" (
+) else if "%choice%"=="4" (
     echo Ignorando
     pause
-) else if "%choice%"=="6" (
+) else if "%choice%"=="5" (
     echo Fechando o Script...
     pause
     exit
@@ -178,20 +178,20 @@ if "%choice%"=="2" (
 :7
 cls
 echo Deseja instalar a Steam?
-echo 2. Sim
-echo 3. Nao
-echo 4. Sair
+echo 1. Sim
+echo 2. Nao
+echo 3. Sair
 
 set /p  choice="Digite o número de sua escolha: "
 
-if "%choice%"=="2"  (
+if "%choice%"=="1"  (
     echo Instalando a Steam
     winget install Valve.Steam
     pause
-) else if "%choice%"=="3" (
+) else if "%choice%"=="2" (
     echo Ignorando
     pause
-) else if "%choice%"=="4" (
+) else if "%choice%"=="3" (
     echo Fechando o Script...
     pause
     exit
@@ -204,33 +204,33 @@ if "%choice%"=="2"  (
 :8
 cls 
 echo Escolha um Launcher de Minecraft pra Instalar:
-echo 2. Prism Launcher
-echo 3. ATlauncher
-echo 4. Launcher Official
-echo 5. Ignorar
-echo 6. Sair
+echo 1. Prism Launcher
+echo 2. ATlauncher
+echo 3. Launcher Official
+echo 4. Ignorar
+echo 5. Sair
 
 set /p choice="Digite um numero da sua escolha: "
 
-if "%choice%"=="2" (
+if "%choice%"=="1" (
     echo Instalando o Prism Launcher...
     winget install PrismLauncher.PrismLauncher
     echo Instalação do Prism Launcher concluida com sucesso.
     pause
-) else if "%choice%"=="3" (
+) else if "%choice%"=="2" (
     echo Instalando o ATlauncher...
     winget install ATLauncher.ATLauncher
     echo Instalação do ATlauncher concluida com sucesso.
     pause
-) else if "%choice%"=="4" (
+) else if "%choice%"=="3" (
     echo Instalando o Launcher Official de Minecraft
     winget install -e --id Mojang.MinecraftLauncher
     echo Instalação do Minecraft Launcher foi concluida com sucesso
     pause
-) else if "%choice%"=="5" (
+) else if "%choice%"=="4" (
     echo Ignorando
     pause
-) else if "%choice%"=="6" (
+) else if "%choice%"=="5" (
     echo Fechando o Script...
     pause
     exit
