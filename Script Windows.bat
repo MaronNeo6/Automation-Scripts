@@ -4,50 +4,50 @@ Title Script de Automação
 :2
 cls
 echo Escolha um aplicativo para instalar:
-echo 2. Firefox
-echo 3. Librewolf
-echo 4. Opera
-echo 5. Brave
-echo 6. Vivaldi
-echo 7. Ungoogled Chromium
-echo 8. Ignorar
-echo 9. Fechar
+echo 1. Firefox
+echo 2. Librewolf
+echo 3. Opera
+echo 4. Brave
+echo 5. Vivaldi
+echo 6. Ungoogled Chromium
+echo 7. Ignorar
+echo 8. Fechar
 
 set /p choice="Digite o numero de sua escolha: "
 
-if "%choice%"=="2" (
+if "%choice%"=="1" (
     echo Instalando o Firefox...
     winget install Mozilla.Firefox
     echo Instalação do Firefox foi concluida com sucesso.
     pause
-) else if "%choice%"=="3" (
+) else if "%choice%"=="2" (
     echo Instalando o Librewolf...
     winget install LibreWolf.LibreWolf
     pause
-) else if "%choice%"=="4" (
+) else if "%choice%"=="3" (
     echo Instalando o Opera
     winget install Opera.Opera
     echo Instalação do Opera foi concluida com sucesso
     pause
-) else if "%choice%"=="5" (
+) else if "%choice%"=="4" (
     echo Instalando o Brave...
     winget install Brave.Brave
     echo Instalação do Brave foi concluida com sucesso
     pause
-) else if "%choice%"=="6" (
+) else if "%choice%"=="5" (
     echo Instalando o Vivaldi...
     winget install VivaldiTechnologies.Vivaldi
     echo Instalação do Vivaldi foi concluida com sucesso
     pause
-) else if "%choice%"=="7" (
+) else if "%choice%"=="6" (
     echo Instalando o Ungoogled Chromium
     winget install eloston.ungoogled-chromium
     echo Instalação do Ungoogled Chromium foi concluida com sucesso
     pause
-) else if "%choice%"=="8" (
+) else if "%choice%"=="7" (
     echo Ignorando
     pause
-) else if "%choice%"=="9" (
+) else if "%choice%"=="8" (
     echo Fechando o Script...
     pause
     exit
@@ -87,9 +87,9 @@ if "%choice%"=="1" (
 :4
 cls
 echo Deseja instalar o Bitwarden?
-echo 2. Sim
-echo 3. Nao
-echo 4. Sair
+echo 1. Sim
+echo 2. Nao
+echo 3. Sair
 
 set /p choice="Digite um numero da sua escolha: "
 
