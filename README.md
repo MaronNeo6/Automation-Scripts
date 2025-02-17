@@ -43,5 +43,5 @@ Instale ele [aqui](https://brew.sh/)
 Apos instalar o utilize o comando chmod semelhante a versão Linux do Script
 
 ```
-chmod +x "Script MacOS"
-./"Script MacOS.sh"
+chmod +x MacOS.sh
+./MacOS.sh
