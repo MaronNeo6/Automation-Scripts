@@ -21,8 +21,9 @@ Para o Script de Linux, você deve ter o **Flathub** instalado e uma distro que 
 Apos isso utilide o commando chmod para dar as permissões e excute o script no terminal
 
 ```
-chmod +x "Script Linux.sh"
-./"Script Linux.sh"
+chmod +x Arch.sh
+
+./Arch.sh
 ```
 
 ### MacOS
