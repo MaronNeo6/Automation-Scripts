@@ -26,6 +26,15 @@ chmod +x Arch.sh
 ./Arch.sh
 ```
 
+ou
+
+```
+chmod +x Debian.sh
+./Debian.sh
+```
+
+A depender do seu Sistema Operacional
+
 ### MacOS
 Para o Script do MacOS, você deve ter o **Brew** instalado para que ele funcione
 
