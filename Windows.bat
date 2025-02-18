@@ -279,6 +279,7 @@ if "%choice"=="1" (
 
 cls
 echo O Script acabou preesione qualquer tecla para fechar
+echo Obrigado por usar este Script
 pause
 
 exit
