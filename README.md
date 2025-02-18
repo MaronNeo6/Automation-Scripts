@@ -26,6 +26,8 @@ chmod +x Script.sh
 ./Script.sh
 ```
 
+Para o Script que você deseja usar
+
 A depender do seu Sistema Operacional
 
 ### MacOS
