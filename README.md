@@ -21,16 +21,9 @@ Para o Script de Linux, você deve ter o **Flathub** instalado e uma distro que 
 Apos isso utilide o commando chmod para dar as permissões e excute o script no terminal
 
 ```
-chmod +x Arch.sh
+chmod +x Script.sh
 
-./Arch.sh
-```
-
-ou
-
-```
-chmod +x Debian.sh
-./Debian.sh
+./Script.sh
 ```
 
 A depender do seu Sistema Operacional
