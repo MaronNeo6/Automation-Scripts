@@ -68,6 +68,7 @@ while true; do
             ;;
     esac
 done
+clear
 
 echo "Instalando o Minecraft Bedrock Launcher"
 flatpak install flathub io.mrarm.mcpelauncher
@@ -75,9 +76,11 @@ clear
 
 echo "Instale o Cliente Steam indo diretamente no site, pressione 1 para continuar"
 read -n 1 -s
+clear
 
 echo "Instalando o Sober (Roblox no Linux)"
 flatpak install --user https://sober.vinegarhq.org/sober.flatpakref
+clear
 
 MENU="
 1 - Sim
@@ -108,6 +111,7 @@ while true; do
             ''
     esac
 done
+clear
 
 MENU="
 1 - Sim
@@ -127,16 +131,14 @@ while true; do
       echo "$SIM"
       flatpak install flathub org.ferdium.Ferdium
       break
-      clear
       ;;
     2)
       echo "$NAO"
       break
-      clear
       ;;
     *)
       echo "Opção $OPCAO não é válida"
       ;;
   esac
 done
-
+clear
