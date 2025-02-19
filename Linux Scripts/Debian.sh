@@ -3,6 +3,7 @@
 echo "Este Script demanda que o Flatpak esteja instalado para a maioria das coias"
 echo "Caso este não seja o caso o Script não ira funcionar!"
 
+
 MENU="
 1 - Sim
 2 - Não
@@ -36,6 +37,7 @@ while true; do
       ;;
   esac
 done
+clear
 
 MENU="
 1 - Sim
