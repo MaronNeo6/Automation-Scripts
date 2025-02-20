@@ -80,8 +80,12 @@ echo "Instalando o Minecraft Bedrock Launcher"
 flatpak install flathub io.mrarm.mcpelauncher
 clear
 
-echo "Instaland o VLC"
+echo "Instalando o VLC"
 sudo dnf install vlc
+clear
+
+echo "Instalando o Retroarch"
+sudo dnf retroarch
 clear
 
 MENU="

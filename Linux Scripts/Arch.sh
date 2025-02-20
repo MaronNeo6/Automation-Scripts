@@ -78,6 +78,10 @@ echo "Instalando o VLC"
 sudo pacman -S vlc
 clear
 
+echo "Instalando o RetroArch"
+sudo pacman -S retroarch
+clear
+
 MENU="
 1 - Steam Nativa
 2 - Steam Flatpak
