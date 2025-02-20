@@ -36,6 +36,7 @@ while true; do
       ;;
   esac
 done
+clear
 
 MENU="
 1 - Sim
@@ -71,6 +72,10 @@ done
 
 echo "Instalando o Minecraft Bedrock Launcher"
 flatpak install flathub io.mrarm.mcpelauncher
+clear
+
+echo "Instalando o VLC"
+sudo pacman -S vlc
 clear
 
 MENU="

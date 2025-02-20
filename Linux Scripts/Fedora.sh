@@ -80,6 +80,10 @@ echo "Instalando o Minecraft Bedrock Launcher"
 flatpak install flathub io.mrarm.mcpelauncher
 clear
 
+echo "Instaland o VLC"
+sudo dnf install vlc
+clear
+
 MENU="
 1 - Steam Nativa
 2 - Steam Flatpak

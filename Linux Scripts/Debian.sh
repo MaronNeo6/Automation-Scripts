@@ -3,7 +3,6 @@
 echo "Este Script demanda que o Flatpak esteja instalado para a maioria das coias"
 echo "Caso este não seja o caso o Script não ira funcionar!"
 
-
 MENU="
 1 - Sim
 2 - Não
@@ -74,6 +73,10 @@ clear
 
 echo "Instalando o Minecraft Bedrock Launcher"
 flatpak install flathub io.mrarm.mcpelauncher
+clear
+
+echo "Instalando o VLC"
+sudo apt install vlc
 clear
 
 echo "Instale o Cliente Steam indo diretamente no site, pressione 1 para continuar"
