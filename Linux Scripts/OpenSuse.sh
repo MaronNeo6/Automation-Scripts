@@ -172,3 +172,39 @@ while true; do
   esac
 done
 clear
+
+MENU="
+1 - OverSteer (Logitech, Etc)
+2 - Boxflat (Moza)
+3 - Ignorar
+"
+
+OVER="Instalando o OverSteer"
+BOX="Instalando o Boxflat"
+IGN="Ignorando a instalação"
+
+while true; do
+  echo "$MENU"
+
+  read -p "Escolha qual deseja instalar: " OPCAO
+
+  case "$OPCAO" in
+    1)
+      echo "$OVER"
+      flatpak install flathub io.github.berarma.Oversteer
+      break
+      ;;
+    2)
+      echo "$BOX"
+      flatpak install flathub io.github.lawstorant.boxflat
+      break
+      ;;
+    3)
+      echo "$IGN"
+      break
+      ;;
+    *)
+        echo "Opção $OPCAO não é válida"
+        ;;
+  esac
+done
