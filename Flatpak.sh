@@ -5,12 +5,14 @@ MENU="
 2 - Debian
 3 - Fedora
 4 - OpenSuse
+5 - Outros
 "
 
 ARCH="Instalando o Flatpak no Arch Linux"
 DEB="Instalando o Flatpak em distribuições baseadas em Debian"
 FED="Instalando o Flatpak no Fedora"
 OPEN="Instalando o Flatpak no OpenSuse"
+OUTRO="Abrindo o site do Flatpak... Clique no icone do sistema que você esta usando"
 
 while true; do
     echo "$MENU"
@@ -40,6 +42,9 @@ while true; do
             flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
             break
             ;;
+	5)
+	    echo "$OUTRO"
+	    xdg-open https://flatpak.org/setup/
         *)
             echo "Opção $OPCAO não é valida"
             ;;
