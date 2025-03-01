@@ -42,9 +42,11 @@ while true; do
             flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
             break
             ;;
-	5)
-	    echo "$OUTRO"
-	    xdg-open https://flatpak.org/setup/
+	      5)
+	          echo "$OUTRO"
+	          xdg-open https://flatpak.org/setup/
+            break
+            ;;
         *)
             echo "Opção $OPCAO não é valida"
             ;;
