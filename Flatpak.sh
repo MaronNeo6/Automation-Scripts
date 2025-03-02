@@ -50,5 +50,5 @@ while true; do
         *)
             echo "Opção $OPCAO não é valida"
             ;;
-    esac
+    esa
 done
