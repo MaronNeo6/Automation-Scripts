@@ -4,7 +4,7 @@ echo "Este Script demanda que o Flatpak esteja instalado para a maioria das coia
 echo "Caso este não seja o caso o Script não ira funcionar!"
 
 MENU="
-1 - Sim
+1 - Instalar o Revolt
 2 - Não
 "
 
@@ -39,8 +39,8 @@ done
 clear
 
 MENU="
-1 - Sim
-2 - Não
+1 - Instalar o Neovim
+2 - Não instalar
 "
 
 SIM="Instalando o Neovim"
@@ -88,8 +88,8 @@ flatpak install --user https://sober.vinegarhq.org/sober.flatpakref
 clear
 
 MENU="
-1 - Sim
-2 - Não
+1 - Instalar o ZSH
+2 - Não instalar
 "
 
 SIM="Instalando o ZSH e o Oh My ZSH"
@@ -119,8 +119,8 @@ done
 clear
 
 MENU="
-1 - Sim
-2 - Não
+1 - Instalar o Fedium
+2 - Não instalar
 "
 
 SIM="Instalando o Ferdium"
