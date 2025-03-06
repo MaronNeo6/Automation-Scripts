@@ -4,8 +4,8 @@ echo "Este Script demanda que o Flatpak esteja instalado para a maioria das coia
 echo "Caso este não seja o caso o Script não ira funcionar!"
 
 MENU="
-1 - Sim
-2 - Não
+1 - Instalar o Revolt
+2 - Não Instalar
 "
 
 while true; do
@@ -39,8 +39,8 @@ done
 clear
 
 MENU="
-1 - Sim
-2 - Não
+1 - Instalar o NeoVim
+2 - Não Instalar
 "
 
 SIM="Instalando o Neovim"
@@ -116,8 +116,8 @@ echo "Instalando o Sober (Roblox no Linux)"
 flatpak install --user https://sober.vinegarhq.org/sober.flatpakref
 
 MENU="
-1 - Sim
-2 - Não
+1 - Instalar o ZSH
+2 - Não instalar
 "
 
 SIM="Instalando o ZSH e o Oh My ZSH"
@@ -146,8 +146,8 @@ while true; do
 done
 
 MENU="
-1 - Sim
-2 - Não
+1 - Instalar o Ferdium
+2 - Não instalar
 "
 
 SIM="Instalando o Ferdium"
