@@ -40,3 +40,4 @@ Apos instalar o utilize o comando chmod semelhante a versão Linux do Script
 ```
 chmod +x MacOS.sh
 ./MacOS.sh
+```
