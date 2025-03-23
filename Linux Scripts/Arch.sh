@@ -1,7 +1,9 @@
 #!/bin/bash
 
-echo "Este Script demanda que o Flatpak esteja instalado para a maioria das coias"
-echo "Caso este não seja o caso o Script não ira funcionar!"
+echo "Este Script prescisa do Flatpak instalado para seu funcionamento"
+echo "Digite 1 para continuar"
+read -n 1 -s
+clear
 
 MENU="
 1 - Instalar o Revolt
@@ -69,6 +71,7 @@ while true; do
             ;;
     esac
 done
+clear
 
 echo "Instalando o Minecraft Bedrock Launcher"
 flatpak install flathub io.mrarm.mcpelauncher
@@ -111,6 +114,7 @@ while true; do
             ;;
     esac
 done
+clear
 
 echo "Instalando o Sober (Roblox no Linux)"
 flatpak install --user https://sober.vinegarhq.org/sober.flatpakref
@@ -144,6 +148,7 @@ while true; do
             ''
     esac
 done
+clear
 
 MENU="
 1 - Instalar o Ferdium
@@ -175,6 +180,7 @@ while true; do
       ;;
   esac
 done
+clear
 
 MENU="
 1 - OverSteer (Logitech, Etc)
@@ -211,3 +217,4 @@ while true; do
         ;;
   esac
 done
+clear

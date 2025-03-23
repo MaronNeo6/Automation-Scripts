@@ -7,7 +7,7 @@ clear
 
 MENU="
 1 - Instalar o Revolt
-2 - Não
+2 - Não Instalar
 "
 
 while true; do
@@ -41,8 +41,8 @@ done
 clear
 
 MENU="
-1 - Instalar o Neovim
-2 - Não instalar
+1 - Instalar o NeoVim
+2 - Não Instalar
 "
 
 SIM="Instalando o Neovim"
@@ -56,7 +56,7 @@ while true; do
     case "$OPCAO" in
         1)
             echo "$SIM"
-            sudo apt install neovim
+            sudo xbps-install -S neovim
             git clone https://github.com/LazyVim/starter ~/.config/nvim
             rm -rf ~/.config/nvim/.git
             nvim
@@ -78,11 +78,42 @@ flatpak install flathub io.mrarm.mcpelauncher
 clear
 
 echo "Instalando o VLC"
-sudo apt install vlc
+sudo xbps-install -S vlc
 clear
 
-echo "Instale o Cliente Steam indo diretamente no site, pressione 1 para continuar"
-read -n 1 -s
+echo "Instalando o RetroArch"
+sudo xbps-install -S retroarch
+clear
+
+MENU="
+1 - Steam Nativa
+2 - Steam Flatpak
+"
+
+NATIVA="Instalando a Steeam"
+FLATPAK="Instalando a Steam Flatpak"
+
+while true; do
+    echo "$MENU"
+
+    read -p "Escolha uma opção: " OPCAO
+
+    case "$OPCAO" in
+        1)
+            echo "$NATIVA"
+            sudo xbps-install -S steam
+            break
+            ;;
+        2)
+            echo "FLATPAK"
+            flatpak install flathub com.valvesoftware.Steam
+            break
+            ;;
+        *)
+            echo "Opção $OPCAO não é valida"
+            ;;
+    esac
+done
 clear
 
 echo "Instalando o Sober (Roblox no Linux)"
@@ -105,7 +136,7 @@ while true; do
     case "$OPCAO" in
         1)
             echo "$SIM"
-            sudo apt install zsh
+            sudo xbps-install -S zsh
             sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
             break
             ;;
@@ -121,7 +152,7 @@ done
 clear
 
 MENU="
-1 - Instalar o Fedium
+1 - Instalar o Ferdium
 2 - Não instalar
 "
 
@@ -138,10 +169,12 @@ while true; do
       echo "$SIM"
       flatpak install flathub org.ferdium.Ferdium
       break
+      clear
       ;;
     2)
       echo "$NAO"
       break
+      clear
       ;;
     *)
       echo "Opção $OPCAO não é válida"

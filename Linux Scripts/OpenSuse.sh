@@ -1,7 +1,9 @@
 #!/bin/bash
 
-echo "Este Script demanda que o Flatpak esteja instalado para a maioria das coias"
-echo "Caso este não seja o caso o Script não ira funcionar!"
+echo "Este Script prescisa do Flatpak instalado para seu funcionamento"
+echo "Digite 1 para continuar"
+read -n 1 -s
+clear
 
 MENU="
 1 - Instalar o Revolt

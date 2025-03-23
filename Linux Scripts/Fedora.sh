@@ -1,7 +1,9 @@
 #!/bin/bash
 
-echo "Este Script demanda que o Flatpak esteja instalado para a maioria das coias"
-echo "Caso este não seja o caso o Script não ira funcionar!"
+echo "Este Script prescisa do Flatpak instalado para seu funcionamento"
+echo "Digite 1 para continuar"
+read -n 1 -s
+clear
 
 echo "Instalando o RPM Fusion"
 sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
@@ -221,3 +223,4 @@ while true; do
         ;;
   esac
 done
+clear
