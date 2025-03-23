@@ -1,6 +1,21 @@
 # Automation-Scripts
 **Meus Scripts de Automação para instalar alguns pacotes de meu uso**
 
+Sistemas Operacionais que Possuem um Script:
+
+### Linux
+
+Arch Linux
+Debian
+Fedora
+OpenSuse
+Void
+
+### Outros
+
+Windows
+MacOS
+
 ## ⚠️ Atenção
 
 ### Windows
