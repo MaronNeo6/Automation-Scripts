@@ -11,6 +11,38 @@ sudo dnf config-manager setopt fedora-cisco-openh264.enabled=1
 clear
 
 MENU="
+1 - Instalar o Motrix
+2 - Não instalar
+"
+
+while true; do
+  echo "$MENU"
+
+  SIM="Instalando o Motrix"
+  NAO="Passando para o próximo item"
+
+  read - p "Escolha uma opção: " OPCAO
+
+  case "$OPCAO" in
+    1)
+      echo "$SIM"
+      flatpak install flathub net.agalwood.Motrix
+      break
+      clear
+      ;;
+    2)
+      echo "$NAO"
+      break
+      clear
+      ;;
+    *)
+      echo "Opção $OPCAO não é válida"
+      ;;
+  esac
+done
+clear
+
+MENU="
 1 - Instalar o Revolt
 2 - Não instalar
 "

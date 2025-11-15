@@ -113,7 +113,7 @@ if "%choice%"=="1" (
 
 :5
 cls
-echo Deseja instalar o QbitTorrent?
+echo Deseja instalar o Free Download Manager??
 echo 1. Sim
 echo 2. Nao
 echo 3. Sair
@@ -122,8 +122,8 @@ set /p choice="Digite um numero da sua escolha: "
 
 if "%choice%"=="1" (
     echo Instalando o QbitTorrent
-    winget install qBittorrent.qBittorrent
-    echo Instalação do QbitTorrent foi concluida com sucesso.
+    winget install -e --id SoftDeluxe.FreeDownloadManager
+    echo Instalação do Free Download Manager foi concluida com sucesso.
 ) else if "%choice%"=="2" (
     echo Ignorando
     pause
@@ -278,6 +278,7 @@ if "%choice"=="1" (
 )
 
 cls
+
 echo O Script acabou preesione qualquer tecla para fechar
 echo Obrigado por usar este Script
 pause
