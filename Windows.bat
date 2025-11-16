@@ -1,5 +1,5 @@
 @echo off
-Title Script de Automação
+Title Automation Script
 
 :2
 cls
@@ -13,7 +13,7 @@ echo 6. Ungoogled Chromium
 echo 7. Ignorar
 echo 8. Fechar
 
-set /p choice="Digite o numero de sua escolha: "
+set /p choice="Digite sua escolha: "
 
 if "%choice%"=="1" (
     echo Instalando o Firefox...
@@ -64,7 +64,7 @@ echo 1. Sim
 echo 2. Nao
 echo 3. Sair
 
-set /p choice="Digite o numero de sua escolha: "
+set /p choice="Digite sua escolha: "
 
 if "%choice%"=="1" (
     echo Instalando o Thunderbird...
@@ -91,7 +91,7 @@ echo 1. Sim
 echo 2. Nao
 echo 3. Sair
 
-set /p choice="Digite um numero da sua escolha: "
+set /p choice="Digite sua escolha: "
 
 if "%choice%"=="1" (
     echo Instalando o Bitwarden...
@@ -118,10 +118,10 @@ echo 1. Sim
 echo 2. Nao
 echo 3. Sair
 
-set /p choice="Digite um numero da sua escolha: "
+set /p choice="Digite sua escolha: "
 
 if "%choice%"=="1" (
-    echo Instalando o QbitTorrent
+    echo Instalando o FDM
     winget install -e --id SoftDeluxe.FreeDownloadManager
     echo Instalação do Free Download Manager foi concluida com sucesso.
 ) else if "%choice%"=="2" (
@@ -146,7 +146,7 @@ echo 3. Discord PTB
 echo 4. Ignorar
 echo 5. Fechar
 
-set /p choice="Digite o número da sua escolha: "
+set /p choice="Digite sua escolha: "
 
 if "%choice%"=="1" (
     echo Instalando o Discord...
@@ -182,7 +182,7 @@ echo 1. Sim
 echo 2. Nao
 echo 3. Sair
 
-set /p  choice="Digite o número de sua escolha: "
+set /p  choice="Digite sua escolha: "
 
 if "%choice%"=="1"  (
     echo Instalando a Steam
@@ -210,7 +210,7 @@ echo 3. Launcher Official
 echo 4. Ignorar
 echo 5. Sair
 
-set /p choice="Digite um numero da sua escolha: "
+set /p choice="Digite sua escolha: "
 
 if "%choice%"=="1" (
     echo Instalando o Prism Launcher...
@@ -249,7 +249,7 @@ echo 3. Visual Studio Code
 echo 4. Ignorar
 echo 5. Sair
 
-set /p choice="Digite um numero da sua escolha: "
+set /p choice="Digite sua escolha: "
 
 if "%choice"=="1" (
     echo Instalando o NeoVim
