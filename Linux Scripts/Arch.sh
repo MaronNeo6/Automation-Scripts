@@ -115,6 +115,10 @@ clear
 
 echo "Instalando o RetroArch"
 sudo pacman -S retroarch
+sudo pacman -S retroarch-assets-glui
+sudo pacman -S retroarch-assets-ozone
+sudo pacman -S retroarch-assets-xmb
+
 clear
 
 MENU="
