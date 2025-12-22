@@ -144,6 +144,10 @@ while true; do
 done
 clear
 
+echo "Instalando o Sober (Roblox no Linux)"
+flatpak install flathub org.vinegarhq.Sober
+clear
+
 MENU="
 1 - Instalar o ZSH
 2 - Não instalar 
