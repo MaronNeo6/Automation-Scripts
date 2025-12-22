@@ -154,7 +154,7 @@ done
 clear
 
 echo "Instalando o Sober (Roblox no Linux)"
-flatpak install --user https://sober.vinegarhq.org/sober.flatpakref
+flatpak install flathub org.vinegarhq.Sober
 clear
 
 MENU="
