@@ -1,5 +1,14 @@
 #!/bin/bash
 
+# ===========================================================================
+# Script para instalar apps no OpenSuse e derivados (requer Flatpak)
+#
+# Cria um menu visual no qual você pode escolher uma opção e ele executar os 
+# comandos relacionados a aquela opção
+# Porém se digitado um numero não existente
+# (Ele te dar 6 opções e você digitar 7 em diante ele repete o menu visual)
+# ===========================================================================
+
 echo "Este Script prescisa do Flatpak instalado para seu funcionamento"
 echo "Digite 1 para continuar"
 read -n 1 -s
