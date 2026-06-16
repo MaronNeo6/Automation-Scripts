@@ -1,6 +1,15 @@
 @echo off
 Title Automation Script
 
+REM ===========================================================================
+REM Script para instalar apps no Debian e derivados (requer Flatpak)
+REM
+REM Cria um menu visual no qual você pode escolher uma opção e ele executar os 
+REM comandos relacionados a aquela opção
+REM Porém se digitado um numero não existente
+REM (Ele te dar 6 opções e você digitar 7 em diante ele repete o menu visual)
+REM ===========================================================================
+
 :2
 cls
 echo Escolha um aplicativo para instalar:
