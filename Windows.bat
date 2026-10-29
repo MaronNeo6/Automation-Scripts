@@ -2,7 +2,7 @@
 Title Automation Script
 
 REM ===========================================================================
-REM Script para instalar apps no Debian e derivados (requer Flatpak)
+REM Script para instalar apps no Windows 10 e 11 (requer Winget)
 REM
 REM Cria um menu visual no qual você pode escolher uma opção e ele executar os 
 REM comandos relacionados a aquela opção
