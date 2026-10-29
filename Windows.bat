@@ -286,6 +286,30 @@ if "%choice"=="1" (
     goto 9
 )
 
+:10
+echo Deseja instalar o VLC?
+echo 1. Sim
+echo 2. Não
+echo 3. Sair
+
+set /p choice="Digite sua escolha: "
+
+if "%choice"=="1" (
+    echo Instalando o VLC
+    winget install VideoLAN.VLC
+    echo Instalação do VLC concluida com sucesso
+    pause
+) else if "%choice"=="2" (
+    echo Ignorando
+    pause
+) else if "%choice"=="3" (
+    echo Fechando o Script
+    pause
+    exit
+) else (
+    echo Escolha inválida, Por favor, digite um numero válido
+    goto 10
+)
 cls
 
 echo O Script acabou preesione qualquer tecla para fechar
