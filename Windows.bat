@@ -150,8 +150,8 @@ if "%choice%"=="1" (
 cls
 echo Escolha um aplicativo para instalar:
 echo 1. Discord
-echo 2. Discord Canary
-echo 3. Discord PTB
+echo 2. Discord PTB
+echo 3. Discord Canary
 echo 4. Ignorar
 echo 5. Fechar
 
