@@ -312,6 +312,32 @@ if "%choice"=="1" (
 )
 cls
 
+:11
+cls
+echo Deseja instalar a Heroic Games Launcher?
+echo 1. Sim
+echo 2. Nao
+echo 3. Sair
+
+set /p  choice="Digite sua escolha: "
+
+if "%choice%"=="1"  (
+    echo Instalando a Steam
+    winget install Valve.Steam
+    pause
+) else if "%choice%"=="2" (
+    echo Ignorando
+    pause
+) else if "%choice%"=="3" (
+    echo Fechando o Script...
+    pause
+    exit
+) else (
+    echo Escolha inválida. Por favor, digite um numero válido.
+    pause
+    goto 11
+)
+
 echo O Script acabou preesione qualquer tecla para fechar
 echo Obrigado por usar este Script
 pause
