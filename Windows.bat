@@ -287,30 +287,31 @@ if "%choice"=="1" (
 )
 
 :10
-echo Deseja instalar o VLC?
+cls
+echo Deseja instalar o VLC
 echo 1. Sim
-echo 2. Não
+echo 2. Nao
 echo 3. Sair
 
 set /p choice="Digite sua escolha: "
 
-if "%choice"=="1" (
-    echo Instalando o VLC
+if "%choice%"=="1" (
+    echo Instalando o VLC...
     winget install VideoLAN.VLC
-    echo Instalação do VLC concluida com sucesso
+    echo Instalação do Thunderbird foi concluida com sucesso.
     pause
-) else if "%choice"=="2" (
+) else if "%choice%"=="2" (
     echo Ignorando
     pause
-) else if "%choice"=="3" (
-    echo Fechando o Script
+) else if "%choice%"=="3" (
+    echo Fechando o Script...
     pause
     exit
 ) else (
-    echo Escolha inválida, Por favor, digite um numero válido
+    echo Escolha um numero valido!
+    pause
     goto 10
 )
-cls
 
 :11
 cls
@@ -322,8 +323,8 @@ echo 3. Sair
 set /p  choice="Digite sua escolha: "
 
 if "%choice%"=="1"  (
-    echo Instalando a Steam
-    winget install Valve.Steam
+    echo Instalando a Heroic...
+    winget install HeroicGamesLauncher.HeroicGamesLauncher
     pause
 ) else if "%choice%"=="2" (
     echo Ignorando
