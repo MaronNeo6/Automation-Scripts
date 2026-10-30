@@ -265,3 +265,36 @@ while true; do
   esac
 done
 clear
+
+MENU="
+1 - Sim
+2 - Não
+"
+
+SIM="Instalando o qBitTorrent e TorrHunt?"
+NAO="Não instalando o qBitTorrent e TorrHunt"
+
+while true; do
+  echo "$MENU"
+
+  read -p "Instalar o qBitTorrent e TorrHunt? " OPCAO
+
+  case "$OPCAO" in
+    1)
+      echo "$SIM"
+      flatpak install flathub org.qbittorrent.qBittorrent
+      flatpak install flathub com.ktechpit.torrhunt
+      break
+      clear
+      ;;
+    2)
+      echo "$NAO"
+      break
+      clear
+      ;;
+    *)
+      echo "Opção $OPCAO não é válida"
+      ;;
+  esac
+done
+clear
